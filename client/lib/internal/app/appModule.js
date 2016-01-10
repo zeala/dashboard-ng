@@ -3,7 +3,7 @@
 angular.module("app",
     ['psFrameworkModule',
         'angular-meteor',
-    'ui.router',]);
+        'ui.router',]);
 angular.module('app').config(function($urlRouterProvider, $stateProvider, $locationProvider){
 
     $stateProvider
