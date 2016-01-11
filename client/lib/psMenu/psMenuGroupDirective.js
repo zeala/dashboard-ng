@@ -30,10 +30,6 @@ angular.module('psMenuModule').directive('psMenuGroup', function(){
 
             scope.setSubmenuPosition = function(){
                 var pos = el.offset();
-                console.log("setSubmenu position");
-                console.log(pos);
-                console.log("pos.left: " + pos.left);
-                console.log($('.ps-subitem-section'));
                 $('.ps-subitem-section').css({'left': pos.left + 20, 'top': 36});
             }
         }
