@@ -5,7 +5,6 @@ angular.module("psMenuModule").directive('psMenu', function(){
         scope:{
 
         },
-        restrict: 'AE',
         transclude: true,
         templateUrl: "client/lib/psMenu/psMenuTemplate.html",
         controller: 'psMenuController',

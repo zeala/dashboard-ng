@@ -2,13 +2,25 @@
 
 angular.module('psMenuModule').directive('psMenuItem', function(){
     return{
-        required: '^psMenuModule',
+        require: '^psMenu',
         scope:{
-            label: '@'
+            label: '@',
+            icon: '@',
+            route: '@'
         },
         templateUrl: 'client/lib/psMenu/psMenuItemTemplate.html',
         link: function(scope, el, attr, ctrl){
-
+            scope.isActive = function(){
+                return el === ctrl.getActiveElement();
+            }
+            el.on('click', function(evt){
+                evt.stopPropagation();
+                evt.preventDefault();
+                scope.$apply(function(){
+                    ctrl.setActiveElement(el);
+                    ctrl.setRoute(scope.route);
+                });
+            })
         }
     }
 });
