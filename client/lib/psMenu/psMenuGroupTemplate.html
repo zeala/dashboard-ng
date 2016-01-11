@@ -11,6 +11,7 @@
 </li>
 <div ng-show="isOpen"
      class="ps-subitem-section"
+     ng-class="{'ps-popup-menu': !isVertical()}"
     >
     <ul ng-transclude></ul>
 </div>
