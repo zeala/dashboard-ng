@@ -21,3 +21,4 @@ twbs:bootstrap
 fortawesome:fontawesome
 jquery
 d3js:d3
+angular:angular-animate

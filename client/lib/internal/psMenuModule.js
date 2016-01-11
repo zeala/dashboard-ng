@@ -1,1 +1,1 @@
-angular.module('psMenuModule', []);
+angular.module('psMenuModule', ["ngAnimate"]);
