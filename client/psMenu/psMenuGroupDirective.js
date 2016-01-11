@@ -8,7 +8,7 @@ angular.module('psMenuModule').directive('psMenuGroup', function(){
             label: '@',
             icon: '@'
         },
-        templateUrl: 'client/lib/psMenu/psMenuGroupTemplate.html',
+        templateUrl: 'client/psMenu/psMenuGroupTemplate.html',
         link: function(scope, el, attrs, ctrl){
             scope.isOpen = false;
             scope.closeMenu = function(){

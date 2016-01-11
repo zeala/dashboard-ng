@@ -8,7 +8,7 @@ angular.module('psMenuModule').directive('psMenuItem', function(){
             icon: '@',
             route: '@'
         },
-        templateUrl: 'client/lib/psMenu/psMenuItemTemplate.html',
+        templateUrl: 'client/psMenu/psMenuItemTemplate.html',
         link: function(scope, el, attr, ctrl){
             scope.isActive = function(){
                 return el === ctrl.getActiveElement();

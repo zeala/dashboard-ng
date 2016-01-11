@@ -10,7 +10,7 @@ angular.module("app").directive("psFramework", function(){
            iconFile: '@'
        },
        controller: "psFrameworkController",
-       templateUrl: "client/lib/psFramework/psFrameworkTemplate.html"
+       templateUrl: "client/psFramework/psFrameworkTemplate.html"
        //template: "<h1>This is the view from TEMPLATE</h1>"
    }
 });

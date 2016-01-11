@@ -11,7 +11,7 @@ angular.module('app').config(['$routeProvider', function($routeProvider){
         {
             url: '/dashboard',
             config:{
-                template: '<div>dashboard</div>'
+                template: '<local-dashboard></local-dashboard>'
             }
         },
         {
