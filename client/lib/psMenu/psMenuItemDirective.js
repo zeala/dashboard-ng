@@ -12,6 +12,10 @@ angular.module('psMenuModule').directive('psMenuItem', function(){
         link: function(scope, el, attr, ctrl){
             scope.isActive = function(){
                 return el === ctrl.getActiveElement();
+            };
+
+            scope.isVertical = function(){
+                return ctrl.isVertical();
             }
             el.on('click', function(evt){
                 evt.stopPropagation();

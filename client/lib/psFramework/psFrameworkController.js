@@ -2,13 +2,10 @@
 
 angular.module("psFrameworkModule").controller("psFrameworkController",
     ['$scope', '$rootScope', '$window', '$timeout', function($scope, $rootScope, $window, $timeout){
-        $scope.$on('ps-menu-item-selected-event', function(evt, data){
-           $scope.routeString = data.route;
-            checkWidth();
-            broadcastMenuState();
-        });
+
         $scope.isMenuVisible = true;
         $scope.isMenuButtonVisible = true;
+        $scope.isMenuVertical = true;
 
         $($window).on('resize.psFramework', function(){
             $scope.$apply(function(){
@@ -16,6 +13,16 @@ angular.module("psFrameworkModule").controller("psFrameworkController",
                 checkWidth();
                 broadcastMenuState();
             });
+        });
+
+        $scope.$on('ps-menu-item-selected-event', function(evt, data){
+            $scope.routeString = data.route;
+            checkWidth();
+            broadcastMenuState();
+        });
+
+        $scope.$on('ps-menu-orientation-changed-event', function(event, data){
+            $scope.isMenuVertical = data.isMenuVertical;
         });
 
         $scope.$on("$destroy", function(){
