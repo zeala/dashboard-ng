@@ -27,8 +27,12 @@ angular.module('psDashboard').directive('psWidgetBody',[
                 scope.closeModal = function(){
                     console.log("close modal called");
                     $modal.close();
-                }
+                };
 
+                scope.iconClicked = function(){
+                    //empty function body
+                    // a fix for mobile - hijack the hover/touch event
+                }
             }
         }
     }]);
