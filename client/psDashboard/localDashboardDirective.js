@@ -23,15 +23,36 @@ angular.module('app').directive("localDashboard", [function(){
                     sizeX: 3,
                     sizeY: 3,
                     row:0,
-                    col:0
+                    col:0,
+                    minSizeX: 2,
+                    minSizeY:2,
+                    template: '<local-temperature></local-temperature>',
+                    widgetSettings:{
+                        id: 1000,
+                    }
                 },
                 {
                     title: "Second",
-                    sizeX: 2,
-                    sizeY: 4,
+                    sizeX: 5,
+                    sizeY: 3,
                     row:0,
                     col: 5,
-                    template: '<local-temperature></local-temperature>'
+                    template: '<local-employee></local-employee>',
+                    widgetSettings:{
+                        id: 5001,
+                    }
+                },
+                {
+                    title: "Third",
+                    sizeX: 5,
+                    sizeY: 3,
+
+                    row:3,
+                    col: 5,
+                    template: '<local-inventory></local-inventory>',
+                    widgetSettings:{
+                        id: 1002,
+                    }
                 }
             ]
         }

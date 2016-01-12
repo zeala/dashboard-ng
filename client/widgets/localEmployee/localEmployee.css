@@ -2,6 +2,7 @@
     height: 100%;
     width: 100%;
     font-size: 16px;
+    overflow: hidden;
 }
 
 .local-employee-heading {
