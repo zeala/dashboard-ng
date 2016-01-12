@@ -69,6 +69,8 @@ angular.module('app').directive("localDashboard", [function(){
                     template: '<local-temperature></local-temperature>',
                     widgetSettings:{
                         id: 1000,
+                        templateUrl: 'client/dialogs/selectLocationTemplate.html',
+                        controller: 'selectLocationController'
                     }
                 },
                 {
@@ -80,6 +82,8 @@ angular.module('app').directive("localDashboard", [function(){
                     template: '<local-employee></local-employee>',
                     widgetSettings:{
                         id: 5001,
+                        templateUrl: 'client/dialogs/selectEmployeeTemplate.html',
+                        controller: 'selectEmployeeController'
                     }
                 },
                 {
@@ -91,6 +95,8 @@ angular.module('app').directive("localDashboard", [function(){
                     template: '<local-inventory></local-inventory>',
                     widgetSettings:{
                         id: 1002,
+                        templateUrl: 'client/dialogs/selectLocationTemplate.html',
+                        controller: 'selectLocationController'
                     }
                 }
             ]
