@@ -35,18 +35,5 @@ angular.module('app').config(['$routeProvider', function($routeProvider){
 
     $routeProvider.otherwise({redirectTo: '/dashboard'});
 }])
-/*angular.module('app').config(function($urlRouterProvider, $stateProvider, $locationProvider){
-
-    $stateProvider
-        .state('test', {
-            url:"/",
-            template: '<div>test</div>'
-        })
-        .state('login', {
-            url:'/login',
-            template: '<div>blha blah</div>'
-        });
-    $urlRouterProvider.otherwise("/")
-});*/
 
 console.log(" initialised app");

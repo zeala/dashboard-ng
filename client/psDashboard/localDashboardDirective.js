@@ -33,11 +33,11 @@ angular.module('app').directive("localDashboard", [function(){
                     }
                 },
                 {
-                    title: "Employee",
+                    title: "Stock",
                     settings:{
                         sizeX: 5,
                         sizeY: 3,
-                        template: '<local-employee></local-employee>',
+                        template: '<local-stock></local-stock>',
                         widgetSettings:{
                             id: 5001,
                         }
@@ -60,29 +60,29 @@ angular.module('app').directive("localDashboard", [function(){
             scope.widgets = [
                 {
                     title:"First",
-                    sizeX: 3,
-                    sizeY: 3,
+                    sizeX: 7,
+                    sizeY: 4,
                     row:0,
                     col:0,
-                    minSizeX: 2,
-                    minSizeY:2,
-                    template: '<local-temperature></local-temperature>',
+                    minSizeX: 4,
+                    minSizeY:3,
+                    template: '<local-stock></local-stock>',
                     widgetSettings:{
                         id: 1000,
-                        templateUrl: 'client/dialogs/selectLocationTemplate.html',
-                        controller: 'selectLocationController'
+                        templateUrl: 'client/dialogs/selectStockTemplate.html',
+                        controller: 'selectStockController'
                     }
                 },
-                {
+                /*{
                     title: "Second",
                     sizeX: 5,
                     sizeY: 3,
                     row:0,
                     col: 5,
-                    template: '<local-employee></local-employee>',
+                    template: '<local-stock></local-stock>',
                     widgetSettings:{
                         id: 5001,
-                        templateUrl: 'client/dialogs/selectEmployeeTemplate.html',
+                        templateUrl: 'client/dialogs/selectStockTemplate.html',
                         controller: 'selectEmployeeController'
                     }
                 },
@@ -98,7 +98,7 @@ angular.module('app').directive("localDashboard", [function(){
                         templateUrl: 'client/dialogs/selectLocationTemplate.html',
                         controller: 'selectLocationController'
                     }
-                }
+                }*/
             ]
         }
     }

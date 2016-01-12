@@ -78,36 +78,36 @@ angular.module('app').factory('dataService',
         }
     ];
 
-    var employees = [
+    var stocks = [
         {
             id: 5000,
-            name: 'Andy Chatterton',
+            name: 'test',
             location: 'Raquette River',
-            image: '/employee-andy.png'
+            image: 'http://chart.finance.yahoo.com/z?s=GOOG&t=6m&q=l&l=on&z=l&p=m50,e200,v'
         },
         {
             id: 5001,
-            name: 'April Donaldson',
+            name: 'test',
             location: 'Saranac River',
-            image: '/employee-april.png'
+            image: 'http://chart.finance.yahoo.com/z?s=GOOG&t=6m&q=l&l=on&z=l&p=m50,e200,v'
         },
         {
             id: 5002,
-            name: 'Don Morgan',
+            name: 'test',
             location: 'Black Creek',
-            image: '/employee-don.png'
+            image: 'http://chart.finance.yahoo.com/z?s=GOOG&t=6m&q=l&l=on&z=l&p=m50,e200,v'
         },
         {
             id: 5003,
-            name: 'Tom Sullivan',
+            name: 'test',
             location: 'Ausable River',
-            image: '/employee-tom.png'
+            image: 'http://chart.finance.yahoo.com/z?s=GOOG&t=6m&q=l&l=on&z=l&p=m50,e200,v'
         },
         {
             id: 5004,
-            name: 'Kathy Fletcher',
+            name: 'test',
             location: 'Batten Kill',
-            image: '/employee-kathy.png'
+            image: 'http://chart.finance.yahoo.com/z?s=GOOG&t=6m&q=l&l=on&z=l&p=m50,e200,v'
         }
     ];
 
@@ -126,17 +126,17 @@ angular.module('app').factory('dataService',
         }, 300);
     };
 
-    var getEmployees = function () {
+    var getStocks = function () {
         return $timeout(function () {
-            return employees;
+            return stocks;
         }, 500);
     };
 
-    var getEmployee = function (id) {
+    var getStock = function (id) {
         return $timeout(function () {
-            for (var i = 0; i < employees.length; i++)
-                if (employees[i].id == id)
-                    return employees[i];
+            for (var i = 0; i < stocks.length; i++)
+                if (stocks[i].id == id)
+                    return stocks[i];
             return undefined;
         }, 300);
     };
@@ -145,7 +145,7 @@ angular.module('app').factory('dataService',
     return {
         getLocations: getLocations,
         getLocation: getLocation,
-        getEmployees: getEmployees,
-        getEmployee: getEmployee
+        getStocks: getStocks,
+        getStock: getStock
     };
 }]);
