@@ -17,6 +17,46 @@ angular.module('app').directive("localDashboard", [function(){
                 flating: true,
                 swapping:false
             };
+
+            scope.widgetDefinitions = [
+                {
+                    title: "Temperature",
+                    settings:{
+                        sizeX: 3,
+                        sizeY: 3,
+                        minSizeX: 2,
+                        minSizeY:2,
+                        template: '<local-temperature></local-temperature>',
+                        widgetSettings:{
+                            id: 1000,
+                        }
+                    }
+                },
+                {
+                    title: "Employee",
+                    settings:{
+                        sizeX: 5,
+                        sizeY: 3,
+                        template: '<local-employee></local-employee>',
+                        widgetSettings:{
+                            id: 5001,
+                        }
+                    }
+                },
+                {
+                    title: "Inventory",
+                    settings: {
+                        sizeX: 5,
+                        sizeY: 3,
+                        row:3,
+                        col: 5,
+                        template: '<local-inventory></local-inventory>',
+                        widgetSettings:{
+                            id: 1002,
+                        }
+                    }
+                }
+            ]
             scope.widgets = [
                 {
                     title:"First",
@@ -46,7 +86,6 @@ angular.module('app').directive("localDashboard", [function(){
                     title: "Third",
                     sizeX: 5,
                     sizeY: 3,
-
                     row:3,
                     col: 5,
                     template: '<local-inventory></local-inventory>',

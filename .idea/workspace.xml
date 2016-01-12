@@ -3,15 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ddf9b0a4-36ad-45df-8c7c-71cf33e84a33" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/psDashboard/localDashboardDirective.js" afterPath="$PROJECT_DIR$/client/psDashboard/localDashboardDirective.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/widgets/localEmployee/localEmployee.css" afterPath="$PROJECT_DIR$/client/widgets/localEmployee/localEmployee.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/widgets/localEmployee/localEmployeeDirective.js" afterPath="$PROJECT_DIR$/client/widgets/localEmployee/localEmployeeDirective.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/widgets/localEmployee/localEmployeeTemplate.html" afterPath="$PROJECT_DIR$/client/widgets/localEmployee/localEmployeeTemplate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/widgets/localInventory/localInventory.css" afterPath="$PROJECT_DIR$/client/widgets/localInventory/localInventory.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/widgets/localInventory/localInventoryDirective.js" afterPath="$PROJECT_DIR$/client/widgets/localInventory/localInventoryDirective.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/widgets/localInventory/localInventoryTemplate.html" afterPath="$PROJECT_DIR$/client/widgets/localInventory/localInventoryTemplate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/widgets/localTemperature/localTemperature.css" afterPath="$PROJECT_DIR$/client/widgets/localTemperature/localTemperature.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/widgets/localTemperature/localTemperatureDirective.js" afterPath="$PROJECT_DIR$/client/widgets/localTemperature/localTemperatureDirective.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/widgets/localTemperature/localTemperatureTemplate.html" afterPath="$PROJECT_DIR$/client/widgets/localTemperature/localTemperatureTemplate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/psDashboard/psDashboard.css" afterPath="$PROJECT_DIR$/client/psDashboard/psDashboard.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/psDashboard/psDashboardDirective.js" afterPath="$PROJECT_DIR$/client/psDashboard/psDashboardDirective.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/psDashboard/psDashboardTemplate.html" afterPath="$PROJECT_DIR$/client/psDashboard/psDashboardTemplate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/psDashboard/psWidgetBodyDirective.js" afterPath="$PROJECT_DIR$/client/psDashboard/psWidgetBodyDirective.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/psDashboard/psWidgetBodyTemplate.html" afterPath="$PROJECT_DIR$/client/psDashboard/psWidgetBodyTemplate.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="angular_app_platform.iws" />
@@ -33,103 +29,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="localTemperatureTemplate.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/widgets/localTemperature/localTemperatureTemplate.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538">
-              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="localTemperature.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/widgets/localTemperature/localTemperature.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="psDashboardDirective.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/psDashboard/psDashboardDirective.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="localDashboardDirective.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/psDashboard/localDashboardDirective.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+              <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="localEmployeeDirective.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/widgets/localEmployee/localEmployeeDirective.js">
+      <file leaf-file-name="psWidgetBodyDirective.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/psDashboard/psWidgetBodyDirective.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21794872">
-              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.40202704">
+              <caret line="14" column="78" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="localInventoryDirective.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/widgets/localInventory/localInventoryDirective.js">
+      <file leaf-file-name="psWidgetBodyTemplate.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/psDashboard/psWidgetBodyTemplate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            <state vertical-scroll-proportion="-5.8846154">
+              <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="localInventoryTemplate.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/widgets/localInventory/localInventoryTemplate.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.230769">
-              <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="localEmployeeTemplate.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/widgets/localEmployee/localEmployeeTemplate.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846">
-              <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="localEmployee.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/widgets/localEmployee/localEmployee.css">
+      <file leaf-file-name="psDashboard.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/psDashboard/psDashboard.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="localInventory.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/widgets/localInventory/localInventory.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+              <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -152,7 +86,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/lib/psFramework/psFrameworkDirective.js" />
         <option value="$PROJECT_DIR$/client/lib/externalModules/psMenu/psMenuModule.js" />
         <option value="$PROJECT_DIR$/client/lib/externalModules/psMenu/psMenuDirective.js" />
         <option value="$PROJECT_DIR$/client/external/psMenu/psMenuDirective.js" />
@@ -183,16 +116,12 @@
         <option value="$PROJECT_DIR$/client/psMenu/psMenuDirective.js" />
         <option value="$PROJECT_DIR$/client/psFramework/psFrameworkDirective.js" />
         <option value="$PROJECT_DIR$/client/psDashboard/psDashboard.js" />
-        <option value="$PROJECT_DIR$/client/psDashboard/psDashboardDirective.js" />
         <option value="$PROJECT_DIR$/client/psDashboard/dashboardDirective.js" />
         <option value="$PROJECT_DIR$/client/lib/modules/app/appModule.js" />
-        <option value="$PROJECT_DIR$/client/psDashboard/psDashboard.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/client/widgets/localInventory/wwaInventoryTemplate.html" />
-        <option value="$PROJECT_DIR$/client/psDashboard/psDashboardTemplate.html" />
         <option value="$PROJECT_DIR$/client/psDashboard/pdWidgetBodyTemplate.html" />
         <option value="$PROJECT_DIR$/client/lib/services/dataService.js" />
-        <option value="$PROJECT_DIR$/client/psDashboard/psWidgetBodyDirective.js" />
         <option value="$PROJECT_DIR$/client/widgets/localTemperature/localTemperatureDirective.js" />
         <option value="$PROJECT_DIR$/client/widgets/localTemperature/localTemperatureTemplate.html" />
         <option value="$PROJECT_DIR$/client/widgets/localTemperature/localTemperature.css" />
@@ -201,8 +130,13 @@
         <option value="$PROJECT_DIR$/client/widgets/localEmployee/localEmployeeTemplate.html" />
         <option value="$PROJECT_DIR$/client/widgets/localEmployee/localEmployee.css" />
         <option value="$PROJECT_DIR$/client/widgets/localInventory/localInventory.css" />
-        <option value="$PROJECT_DIR$/client/psDashboard/localDashboardDirective.js" />
         <option value="$PROJECT_DIR$/client/widgets/localInventory/localInventoryTemplate.html" />
+        <option value="$PROJECT_DIR$/client/psDashboard/psDashboardTemplate.html" />
+        <option value="$PROJECT_DIR$/client/psDashboard/psDashboardDirective.js" />
+        <option value="$PROJECT_DIR$/client/psDashboard/localDashboardDirective.js" />
+        <option value="$PROJECT_DIR$/client/psDashboard/psWidgetBodyTemplate.html" />
+        <option value="$PROJECT_DIR$/client/psDashboard/psDashboard.css" />
+        <option value="$PROJECT_DIR$/client/psDashboard/psWidgetBodyDirective.js" />
       </list>
     </option>
   </component>
@@ -500,10 +434,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34402654" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45132744" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45132744" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3141593" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3141593" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -757,14 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/psDashboard/psDashboard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/psFramework/psFrameworkDirective.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -797,38 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/psDashboard/psWidgetBodyDirective.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3445946">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/psDashboard/psDashboardTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36042404">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/psDashboard/psWidgetBodyTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06007067">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/widgets/localTemperature/localTemperatureDirective.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/widgets/localTemperature/localTemperatureTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.461538">
@@ -843,14 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/psDashboard/psDashboardDirective.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
           <folding />
         </state>
       </provider>
@@ -879,18 +765,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/psDashboard/localDashboardDirective.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/widgets/localInventory/localInventoryTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.230769">
           <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/psDashboard/psDashboardDirective.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/widgets/localEmployee/localEmployeeDirective.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/widgets/localTemperature/localTemperatureDirective.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/psDashboard/psDashboardTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.423077">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -903,10 +813,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/widgets/localEmployee/localEmployeeDirective.js">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/aria.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21794872">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.5912162">
+          <caret line="247" column="18" selection-start-line="247" selection-start-column="18" selection-end-line="247" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/psDashboard/psWidgetBodyTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/psDashboard/psDashboard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/psDashboard/localDashboardDirective.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/psDashboard/psWidgetBodyDirective.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40202704">
+          <caret line="14" column="78" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
           <folding />
         </state>
       </provider>
