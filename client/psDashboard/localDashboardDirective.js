@@ -5,7 +5,6 @@ angular.module('app').directive("localDashboard", [function(){
         scope:{
 
         },
-        /*template: '<div>b;aj blah blah</div>'*/
         template: '<ps-dashboard></ps-dashboard>',
         link: function(scope){
 
@@ -19,9 +18,6 @@ angular.module('app').directive("localDashboard", [function(){
                 swapping:false
             };
             scope.widgets = [
-
-
-
                 {
                     title:"First",
                     sizeX: 3,
@@ -34,7 +30,8 @@ angular.module('app').directive("localDashboard", [function(){
                     sizeX: 2,
                     sizeY: 4,
                     row:0,
-                    col: 5
+                    col: 5,
+                    template: '<local-temperature></local-temperature>'
                 }
             ]
         }

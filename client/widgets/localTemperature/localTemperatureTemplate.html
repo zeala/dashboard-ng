@@ -1,0 +1,17 @@
+<div class="local-temperature-widget">
+    <div class="local-temperature-heading">
+        <img class="local-temperature-icon" ng-src="/therm-icon.png" alt="image">
+        <span class="local-temperature-title">Temp</span>
+    </div>
+
+    <div class="local-temperature-body" style="background-image: url('/{{ selectedLocaton.image }}')">
+        <div class="local-temperature-view">
+            <div class="local-temperature-river-name">
+                {{ selectedLocation.name }}
+            </div>
+            <div class="local-temperature-degrees">
+                {{ selectedLocation.temperature }}°
+            </div>
+        </div>
+    </div>
+</div>
