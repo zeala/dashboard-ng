@@ -24,6 +24,11 @@ angular.module('psDashboard').directive('psWidgetBody',[
                     $modal.open(options)
                 }
 
+                scope.closeModal = function(){
+                    console.log("close modal called");
+                    $modal.close();
+                }
+
             }
         }
     }]);

@@ -6,3 +6,10 @@ body{
 .container-fluid{
     padding: 0;
 }
+/*
+
+.modal.fade .modal-dialog {
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+}*/
