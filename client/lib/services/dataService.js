@@ -229,6 +229,25 @@ angular.module('app').factory('dataService',
                 },
             ],
 
+            chartSize: [
+                {
+                    name: "Large",
+                    description: "Large",
+                    tag: "l"
+                },
+                {
+                    name: "Middle",
+                    description: "Middle",
+                    tag: "m"
+                },
+                {
+                    name: "Small",
+                    description: "Small",
+                    tag: "s"
+                }
+            ],
+
+
     };
 
 

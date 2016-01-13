@@ -7,6 +7,7 @@ angular.module('app').controller('selectStockController',
             $scope.isLoaded = false;
             dataService.getStocks().then(function(data){
                 $scope.stocks = data.symbols;
+                $scope.chartSize = data.chartSize;
                 $scope.chartTimeSpan = data.chartTimeSpan;
                 $scope.charType = data.charType;
                 $scope.movingAverageIndicator = data.movingAverageIndicator;
@@ -27,6 +28,7 @@ angular.module('app').controller('selectStockController',
                 $scope.item.widgetSettings.symbol = $scope.selectedStock.name;
                 $scope.item.widgetSettings.chartType = $scope.selectedChartType;
                 $scope.item.widgetSettings.chartTimeSpan = $scope.selectedChartTimeSpan;
+                $scope.item.widgetSettings.chartSize = $scope.selectedChartSize;
                 $scope.item.widgetSettings.movingAverageIndicator = $scope.selectedMovingAverageIndicator;
                 $scope.item.widgetSettings.technicalIndicators2 = $scope.selectedTechnicalIndicators2
 
@@ -45,6 +47,9 @@ angular.module('app').controller('selectStockController',
                 var techIndicator2 = $scope.selectedTechnicalIndicators2
                     ? "&a=" + $scope.selectedTechnicalIndicators2.tag : "";
 
+                var size = $scope.selectedChartSize
+                    ? "&z=" + $scope.selectedChartSize.tag : "&z=s";
+
                 console.log("--------------");
                 console.log("name : " + name);
                 console.log("chartType : " + chartType);
@@ -52,7 +57,7 @@ angular.module('app').controller('selectStockController',
                 console.log("ma : " + ma);
                 console.log("techIndicator2 : " + techIndicator2);
 
-                var size = "&z=l"
+
 
                 var fullURL = $scope.item.widgetSettings.baseUrl +
                     name +

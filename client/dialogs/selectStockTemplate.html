@@ -18,6 +18,18 @@
         </div>
 
         <div class="form-group" style="{display: inline-block; float: left}">
+            <label for="chartSizeInput" class="col-sm-3">Chart size</label>
+            <select
+                    id="chartSizeInput"
+                    ng-show="isLoaded"
+                    ng-model="selectedChartSize"
+                    ng-options="size.name for size in chartSize"
+                    class="col-sm-5">
+                <option value="">Select chart size</option>
+            </select>
+        </div>
+
+        <div class="form-group" style="{display: inline-block; float: left}">
             <label for="chartTimeSpanInput" class="col-sm-3">Time span</label>
             <select id="chartTimeSpanInput"
                     ng-show="isLoaded"
@@ -62,6 +74,9 @@
                 <option value="">Select tech indicator</option>
             </select>
         </div>
+
+
+
     </div>
 </div>
 
