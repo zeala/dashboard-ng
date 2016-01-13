@@ -10,7 +10,7 @@ angular.module('app').directive("localDashboard", [function(){
 
             scope.title= "Dashboard",
             scope.gridsterOpts={
-                columns:12,
+                columns:30,
                 margins: [20, 20],
                 outerMargin: false,
                 pushing: true,

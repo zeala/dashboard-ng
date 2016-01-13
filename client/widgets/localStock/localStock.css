@@ -17,7 +17,7 @@
 
 .local-stock-body {
     display: table;
-    background-color: lemonchiffon;
+    background-color: white;
     color: darkblue;
     width: 100%;
     height: 100%;
@@ -59,7 +59,7 @@
 }
 
 .stock-graph-mg{
-    width: 100%;
-    height:100%
+    /*width: 100%;
+    height:100%*/
 
 }

@@ -52,7 +52,15 @@ angular.module('app').controller('selectStockController',
                 console.log("ma : " + ma);
                 console.log("techIndicator2 : " + techIndicator2);
 
-                var fullURL = $scope.item.widgetSettings.baseUrl + name + chartType + chartTimeSpan + ma + techIndicator2;
+                var size = "&z=l"
+
+                var fullURL = $scope.item.widgetSettings.baseUrl +
+                    name +
+                    chartType +
+                    chartTimeSpan +
+                    ma +
+                    techIndicator2 +
+                    size;
 
                 $scope.$parent.selectedStock.selectedStockGraphUrl = fullURL;
 
