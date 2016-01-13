@@ -40,6 +40,14 @@ angular.module('app').directive("localDashboard", [function(){
                         template: '<local-stock></local-stock>',
                         widgetSettings:{
                             id: 5001,
+                            templateUrl: 'client/dialogs/selectStockTemplate.html',
+                            controller: 'selectStockController',
+                            symbol: "",
+                            chartTimeSpan: "",
+                            movingAverageIndicator: "",
+                            technicalIndicators2: "",
+                            baseUrl: "http://chart.finance.yahoo.com/z?s=",
+                            query:""
                         }
                     }
                 },
@@ -68,9 +76,15 @@ angular.module('app').directive("localDashboard", [function(){
                     minSizeY:3,
                     template: '<local-stock></local-stock>',
                     widgetSettings:{
-                        id: 1000,
+                        id: "GOOG",
                         templateUrl: 'client/dialogs/selectStockTemplate.html',
-                        controller: 'selectStockController'
+                        controller: 'selectStockController',
+                        symbol: "",
+                        chartTimeSpan: "",
+                        movingAverageIndicator: "",
+                        technicalIndicators2: "",
+                        baseUrl: "http://chart.finance.yahoo.com/z?",
+                        query:""
                     }
                 },
                 /*{

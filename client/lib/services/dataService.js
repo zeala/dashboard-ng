@@ -3,135 +3,6 @@
 angular.module('app').factory('dataService',
     ['$timeout', function ($timeout) {
 
-        var charType = [
-            {
-                id: "Line",
-                name: "Line",
-                description: "Line",
-                tag: "l"
-            },
-
-            {
-                id: "Bar",
-                name: "Bar",
-                description: "Bar",
-                tag: "b"
-            },
-
-            {
-                id: "Candle",
-                name: "Candle",
-                description: "Candle",
-                tag: "c"
-            }
-        ];
-
-        var movingAverageIndicator = [
-            {
-                id: "m5",
-                name: "m5",
-                description: "5",
-                tag: "5"
-            },
-            {
-                id: "m10",
-                name: "m10",
-                description: "10",
-                tag: "10"
-            },
-            {
-                id: "m20",
-                name: "m20",
-                description: "20",
-                tag: "20"
-            },
-            {
-                id: "m50",
-                name: "m50",
-                description: "50",
-                tag: "50"
-            },
-            {
-                id: "m100",
-                name: "m100",
-                description: "100",
-                tag: "100"
-            },
-            {
-                id: "m200",
-                name: "m200",
-                description: "200",
-                tag: "200"
-            }
-            ];
-
-        var technicalIndicators2= [
-            {
-                name: "Fast_Stoch",
-                description: "Stochastic",
-                tag: "fs"
-            },
-            {
-                name: "MACD",
-                description: "Moving-Average-Convergence-Divergence",
-                tag: "m26-12-9"
-            },
-            {
-                name: "MFI",
-                description: "Money Flow Index",
-                tag: "f14"
-            },
-            {
-                name: "ROC",
-                description: "Rate of Change",
-                tag: "p12"
-            },
-            {
-                name: "RSI",
-                description: "Relative Strength Index",
-                tag: "r14"
-            },
-            {
-                name: "Slow_Stoch",
-                description: "Slow Stochastic",
-                tag: "ss"
-            },
-            {
-                name: "Vol",
-                description: "Volume",
-                tag: "v"
-            },
-            {
-                name: "Vol_MA",
-                description: "Volume with Moving Average",
-                tag: "vm"
-            },
-            {
-                name: "W_R",
-                description: "Williams Percent Range",
-                tag: "w14"
-            },
-            {
-                name: "Bollinger_Bands",
-                description: "Bollinger Bands",
-                tag: "b"
-            },
-            {
-                name: "Parabolic_SAR",
-                description: "Parabolic Stop And Reverse",
-                tag: "p"
-            },
-            {
-                name: "Splits",
-                description: "Splits",
-                tag: "s"
-            },
-            {
-                name: "Volume",
-                description: "Volume (inside chart)",
-                tag: "v"
-            },
-        ];
 
         var stocks = {
             symbols: [
@@ -228,8 +99,137 @@ angular.module('app').factory('dataService',
                 }
             ],
 
+            charType: [
+                {
+                    id: "Line",
+                    name: "Line",
+                    description: "Line",
+                    tag: "l"
+                },
 
-        };
+                {
+                    id: "Bar",
+                    name: "Bar",
+                    description: "Bar",
+                    tag: "b"
+                },
+
+                {
+                    id: "Candle",
+                    name: "Candle",
+                    description: "Candle",
+                    tag: "c"
+                }
+            ],
+
+            movingAverageIndicator : [
+                {
+                    id: "m5",
+                    name: "m5",
+                    description: "5",
+                    tag: "5"
+                },
+                {
+                    id: "m10",
+                    name: "m10",
+                    description: "10",
+                    tag: "10"
+                },
+                {
+                    id: "m20",
+                    name: "m20",
+                    description: "20",
+                    tag: "20"
+                },
+                {
+                    id: "m50",
+                    name: "m50",
+                    description: "50",
+                    tag: "50"
+                },
+                {
+                    id: "m100",
+                    name: "m100",
+                    description: "100",
+                    tag: "100"
+                },
+                {
+                    id: "m200",
+                    name: "m200",
+                    description: "200",
+                    tag: "200"
+                }
+            ],
+
+            technicalIndicators2 : [
+                {
+                    name: "Fast_Stoch",
+                    description: "Stochastic",
+                    tag: "fs"
+                },
+                {
+                    name: "MACD",
+                    description: "Moving-Average-Convergence-Divergence",
+                    tag: "m26-12-9"
+                },
+                {
+                    name: "MFI",
+                    description: "Money Flow Index",
+                    tag: "f14"
+                },
+                {
+                    name: "ROC",
+                    description: "Rate of Change",
+                    tag: "p12"
+                },
+                {
+                    name: "RSI",
+                    description: "Relative Strength Index",
+                    tag: "r14"
+                },
+                {
+                    name: "Slow_Stoch",
+                    description: "Slow Stochastic",
+                    tag: "ss"
+                },
+                {
+                    name: "Vol",
+                    description: "Volume",
+                    tag: "v"
+                },
+                {
+                    name: "Vol_MA",
+                    description: "Volume with Moving Average",
+                    tag: "vm"
+                },
+                {
+                    name: "W_R",
+                    description: "Williams Percent Range",
+                    tag: "w14"
+                },
+                {
+                    name: "Bollinger_Bands",
+                    description: "Bollinger Bands",
+                    tag: "b"
+                },
+                {
+                    name: "Parabolic_SAR",
+                    description: "Parabolic Stop And Reverse",
+                    tag: "p"
+                },
+                {
+                    name: "Splits",
+                    description: "Splits",
+                    tag: "s"
+                },
+                {
+                    name: "Volume",
+                    description: "Volume (inside chart)",
+                    tag: "v"
+                },
+            ],
+
+    };
 
 
 

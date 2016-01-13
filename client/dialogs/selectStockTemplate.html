@@ -3,10 +3,66 @@
 </div>
 
 <div class="modal-body">
-    <h3>Name</h3>
-    <select ng-show="isLoaded"
-            ng-model="selectedStock"
-            ng-options="stock.name for stock in stocks"></select>
+    <div class="form-horizontal" style="{display: table; margin: auto;}">
+        <div class="form-group"  style="{display: inline-block; float: left}">
+            <label for="stockNameInput" class="col-sm-3">Stock Symbol</label>
+            <select
+                    id="stockNameInput"
+                    ng-show="isLoaded"
+                    ng-model="selectedStock"
+                    ng-options="stock.name for stock in stocks"
+                    class="col-sm-5">
+                <option value="">Select stock</option>
+
+            </select>
+        </div>
+
+        <div class="form-group" style="{display: inline-block; float: left}">
+            <label for="chartTimeSpanInput" class="col-sm-3">Time span</label>
+            <select id="chartTimeSpanInput"
+                    ng-show="isLoaded"
+                    ng-model="selectedChartTimeSpan"
+                    ng-options="span.name for span in chartTimeSpan"
+                    class="col-sm-5">
+                <option value="">Select time span</option>
+            </select>
+        </div>
+
+        <div class="form-group" style="{display: inline-block; float: left}">
+            <label for="chartTypeInput" class="col-sm-3">Chart Type</label>
+            <select id="chartTypeInput"
+                    ng-show="isLoaded"
+                    ng-model="selectedChartType"
+                    ng-options="type.name for type in charType"
+                    class="col-sm-5">
+                <option value="">Select chart type</option>
+            </select>
+        </div>
+
+
+        <div class="form-group" style="{display: inline-block; float: left}">
+            <label for="movingAverageIndicatorInput" class="col-sm-3">Moving Average Indicator</label>
+            <select id="movingAverageIndicatorInput"
+                    ng-show="isLoaded"
+                    ng-model="selectedMovingAverageIndicator"
+                    ng-options="indicator.name for indicator in movingAverageIndicator"
+                    class="col-sm-5">
+                <option value="">Select MA indicator</option>
+            </select>
+        </div>
+
+        <div class="form-group" style="{display: inline-block; float: left}">
+            <label for="techIndicator2Input" class="col-sm-3">Tech indicator 2</label>
+            <select
+                    id="techIndicator2Input"
+                    ng-show="isLoaded"
+                    ng-model="selectedTechnicalIndicators2"
+                    ng-options="indicator.name for indicator in technicalIndicators2"
+                    class="col-sm-5">
+                <option value="">Select tech indicator</option>
+            </select>
+        </div>
+    </div>
 </div>
 
 <div class="modal-footer">
