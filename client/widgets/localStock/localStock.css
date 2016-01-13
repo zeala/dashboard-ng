@@ -6,11 +6,12 @@
 }
 
 .local-stock-heading {
-    background-color: darkorange;
-    color: darkblue;
+    background-color: #b75f02;
+    color: #e6eef5;
     height: 32px;
     padding-top: 2px;
-    font-size: 15px;
+    padding-left: 6px;
+    font-size: 1em;
     line-height: 32px;
 }
 

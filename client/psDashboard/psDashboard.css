@@ -73,3 +73,7 @@ ps-dashboard{
 .dropdown-backdrop{
     position:static;
 }
+
+.dashboard-widget-icon{
+    font-size: 1.3em;
+}

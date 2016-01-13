@@ -25,3 +25,4 @@ angular:angular-animate
 angular:angular-route
 bdt:angular-gridster
 angularui:angular-ui-bootstrap
+peerlibrary:xml2js

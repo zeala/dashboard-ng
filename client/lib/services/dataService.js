@@ -3,7 +3,237 @@
 angular.module('app').factory('dataService',
     ['$timeout', function ($timeout) {
 
-    var locations = [
+        var charType = [
+            {
+                id: "Line",
+                name: "Line",
+                description: "Line",
+                tag: "l"
+            },
+
+            {
+                id: "Bar",
+                name: "Bar",
+                description: "Bar",
+                tag: "b"
+            },
+
+            {
+                id: "Candle",
+                name: "Candle",
+                description: "Candle",
+                tag: "c"
+            }
+        ];
+
+        var movingAverageIndicator = [
+            {
+                id: "m5",
+                name: "m5",
+                description: "5",
+                tag: "5"
+            },
+            {
+                id: "m10",
+                name: "m10",
+                description: "10",
+                tag: "10"
+            },
+            {
+                id: "m20",
+                name: "m20",
+                description: "20",
+                tag: "20"
+            },
+            {
+                id: "m50",
+                name: "m50",
+                description: "50",
+                tag: "50"
+            },
+            {
+                id: "m100",
+                name: "m100",
+                description: "100",
+                tag: "100"
+            },
+            {
+                id: "m200",
+                name: "m200",
+                description: "200",
+                tag: "200"
+            }
+            ];
+
+        var technicalIndicators2= [
+            {
+                name: "Fast_Stoch",
+                description: "Stochastic",
+                tag: "fs"
+            },
+            {
+                name: "MACD",
+                description: "Moving-Average-Convergence-Divergence",
+                tag: "m26-12-9"
+            },
+            {
+                name: "MFI",
+                description: "Money Flow Index",
+                tag: "f14"
+            },
+            {
+                name: "ROC",
+                description: "Rate of Change",
+                tag: "p12"
+            },
+            {
+                name: "RSI",
+                description: "Relative Strength Index",
+                tag: "r14"
+            },
+            {
+                name: "Slow_Stoch",
+                description: "Slow Stochastic",
+                tag: "ss"
+            },
+            {
+                name: "Vol",
+                description: "Volume",
+                tag: "v"
+            },
+            {
+                name: "Vol_MA",
+                description: "Volume with Moving Average",
+                tag: "vm"
+            },
+            {
+                name: "W_R",
+                description: "Williams Percent Range",
+                tag: "w14"
+            },
+            {
+                name: "Bollinger_Bands",
+                description: "Bollinger Bands",
+                tag: "b"
+            },
+            {
+                name: "Parabolic_SAR",
+                description: "Parabolic Stop And Reverse",
+                tag: "p"
+            },
+            {
+                name: "Splits",
+                description: "Splits",
+                tag: "s"
+            },
+            {
+                name: "Volume",
+                description: "Volume (inside chart)",
+                tag: "v"
+            },
+        ];
+
+        var stocks = {
+            symbols: [
+                {
+                    id: "AAPL",
+                    name: 'Apple',
+                },
+                {
+                    id: "MSFT",
+                    name: 'Microsoft',
+                },
+                {
+                    id: "AMZN",
+                    name: 'Amazon',
+                },
+                {
+                    id: "GOOG",
+                    name: 'Google Class C',
+                },
+                {
+                    id: "FB",
+                    name: 'Facebook',
+                },
+                {
+                    id: "GILD",
+                    name: 'Gilead Sciences',
+                },
+                {
+                    id: "INTC",
+                    name: 'Intel',
+                },
+                {
+                    id: "GOOGl",
+                    name: 'Google Class a',
+                },
+                {
+                    id: "CSCO",
+                    name: 'Cisco',
+                },
+                {
+                    id: "CMCSA",
+                    name: 'Comcast Corp',
+                },
+            ],
+
+            chartTimeSpan: [
+                {
+                    id: "c1D",
+                    name: "c1D",
+                    tag: "1d",
+                    description: "1 Day"
+                },
+                {
+                    id: "c5D",
+                    name: "c5D",
+                    tag: "5d",
+                    description: "5 Days"
+                },
+                {
+                    id: "c3M",
+                    name: "c3M",
+                    tag: "3m",
+                    description: "3 Months"
+                },
+                {
+                    id: "c6M",
+                    name: "c6M",
+                    tag: "6m",
+                    description: "6 Months"
+                },
+                {
+                    id: "c1Y",
+                    name: "c1Y",
+                    tag: "1y",
+                    description: "1 Year"
+                },
+                {
+                    id: "c2Y",
+                    name: "c2Y",
+                    tag: "2y",
+                    description: "2 Years"
+                },
+                {
+                    id: "c5Y",
+                    name: "c5Y",
+                    tag: "5y",
+                    description: "5 Years"
+                },
+                {
+                    id: "cMax",
+                    name: "cMax",
+                    tag: "my",
+                    description: "Maximum"
+                }
+            ],
+
+
+        };
+
+
+
+        var locations = [
         {
             id: 1000,
             name: 'Raquette River',
@@ -78,38 +308,7 @@ angular.module('app').factory('dataService',
         }
     ];
 
-    var stocks = [
-        {
-            id: 5000,
-            name: 'test',
-            location: 'Raquette River',
-            image: 'http://chart.finance.yahoo.com/z?s=GOOG&t=6m&q=l&l=on&z=l&p=m50,e200,v'
-        },
-        {
-            id: 5001,
-            name: 'test',
-            location: 'Saranac River',
-            image: 'http://chart.finance.yahoo.com/z?s=GOOG&t=6m&q=l&l=on&z=l&p=m50,e200,v'
-        },
-        {
-            id: 5002,
-            name: 'test',
-            location: 'Black Creek',
-            image: 'http://chart.finance.yahoo.com/z?s=GOOG&t=6m&q=l&l=on&z=l&p=m50,e200,v'
-        },
-        {
-            id: 5003,
-            name: 'test',
-            location: 'Ausable River',
-            image: 'http://chart.finance.yahoo.com/z?s=GOOG&t=6m&q=l&l=on&z=l&p=m50,e200,v'
-        },
-        {
-            id: 5004,
-            name: 'test',
-            location: 'Batten Kill',
-            image: 'http://chart.finance.yahoo.com/z?s=GOOG&t=6m&q=l&l=on&z=l&p=m50,e200,v'
-        }
-    ];
+
 
     var getLocations = function () {
         return $timeout(function () {
