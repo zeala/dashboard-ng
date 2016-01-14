@@ -9,7 +9,7 @@ angular.module('app').controller('selectStockController',
                 $scope.stocks = data.symbols;
                 $scope.chartSize = data.chartSize;
                 $scope.chartTimeSpan = data.chartTimeSpan;
-                $scope.charType = data.charType;
+                $scope.chartType = data.chartType;
                 $scope.movingAverageIndicator = data.movingAverageIndicator;
                 $scope.technicalIndicators2 = data.technicalIndicators2;
 

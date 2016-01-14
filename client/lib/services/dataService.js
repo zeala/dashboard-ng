@@ -99,7 +99,7 @@ angular.module('app').factory('dataService',
                 }
             ],
 
-            charType: [
+            chartType: [
                 {
                     id: "Line",
                     name: "Line",

@@ -1,0 +1,19 @@
+<div>
+    <div class="local-stock-row">
+
+        <div class="form-horizontal" >
+            <div class="form-group"  style="{display: inline-block; float: left}">
+                <label for="stockNameInput" class="col-sm-3">{{label}}</label>
+                <select
+                        id="stockNameInput"
+                        ng-show="isLoaded"
+                        ng-model="modelName"
+                        ng-options="option.name for option in getOptions()"
+                        class="col-sm-5">
+                    <option value="" disabled>--{{optionsPrompt}}--</option>
+
+                </select>
+            </div>
+        </div>
+    </div>
+</div>

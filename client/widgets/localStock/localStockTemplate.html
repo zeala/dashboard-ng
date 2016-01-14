@@ -5,18 +5,29 @@
         <span class="local-stock-title">Stock</span>
     </div>
     <div class="local-stock-body">
-        <div class="local-stock-row">
-           <!-- <div class="local-stock-name-area">
-                <h4>Stock</h4>
-                <p>{{selectedStock.name}}</p>
-                <h4>LOCAL RIVER</h4>
-                <p>{{selectedStock.location}}</p>
-            </div>-->
-            <div class="local-stock-picture-area" style="background-image: url('');">
-                <img src="{{selectedStock.selectedStockGraphUrl}}" class="stock-graph-mg">
-                <!--<img src="{{selectedStock.image}}" class="stock-graph-mg">-->
-            </div>
-        </div>
+
+        <stock-setting label="Stock Symbol" options-prompt="Select stock"
+                model-name="selectedStock" options-name="stocks"></stock-setting>
+
+        <stock-setting label="Chart Size" options-prompt="Select chart size"
+                       model-name="selectedChartSize" options-name="chartSize"></stock-setting>
+
+        <stock-setting label="Time span" options-prompt="Select time span"
+                       model-name="selectedChartTimeSpan" options-name="chartTimeSpan"></stock-setting>
+
+        <stock-setting label="Chart type" options-prompt="Select chart type"
+                       model-name="selectedChartType" options-name="chartType"></stock-setting>
+
+        <stock-setting label="Moving average" options-prompt="Select moving average indicator"
+                       model-name="selectedMovingAverageIndicator" options-name="movingAverageIndicator"></stock-setting>
+
+        <stock-setting label="Technical indicator 2" options-prompt="Select tech Indicator 2"
+                       model-name="selectedTechnicalIndicators2" options-name="technicalIndicators2"></stock-setting>
+
+
+        selected chartSize : {{selectedChartSize}}
+        <button type="button" class="btn btn-primary" ng-click="saveSettings()">OK</button>
+        <button type="button" class="btn btn-default" ng-click="closeModal()">cancel</button>
     </div>
 
 </div>

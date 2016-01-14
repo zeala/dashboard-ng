@@ -21,11 +21,12 @@
     color: darkblue;
     width: 100%;
     height: 100%;
+    padding: 20px;
 }
-
+/*
 .local-stock-row {
     display: table-row;
-}
+}*/
 
 .local-stock-icon {
     height: 24px;

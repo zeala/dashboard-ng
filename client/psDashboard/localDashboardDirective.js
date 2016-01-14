@@ -68,8 +68,8 @@ angular.module('app').directive("localDashboard", [function(){
             scope.widgets = [
                 {
                     title:"First",
-                    sizeX: 7,
-                    sizeY: 4,
+                    sizeX: 15,
+                    sizeY: 9,
                     row:0,
                     col:0,
                     minSizeX: 4,
