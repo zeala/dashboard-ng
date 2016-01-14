@@ -4,6 +4,13 @@ angular.module('app').controller("localStockController",
         $scope.someVar = "default value";
         $scope.isLoaded = false;
 
+        $scope.saveProperty = function(modelId, val){
+            console.log("--- calling save property on the parent");
+            console.log(modelId);
+            console.log(val);
+            $scope[modelId] = val;
+        };
+
         dataService.getStocks().then(function(data){
             $scope.stocks = data.symbols;
             $scope.chartSize = data.chartSize;
@@ -11,9 +18,6 @@ angular.module('app').controller("localStockController",
             $scope.chartType = data.chartType;
             $scope.movingAverageIndicator = data.movingAverageIndicator;
             $scope.technicalIndicators2 = data.technicalIndicators2;
-
-            console.log("\n dataService, getStocks result ");
-            console.log(data);
 
             $scope.isLoaded = true;
 

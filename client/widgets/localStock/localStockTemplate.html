@@ -6,28 +6,40 @@
     </div>
     <div class="local-stock-body">
 
-        <stock-setting label="Stock Symbol" options-prompt="Select stock"
+        <stock-setting
+                label="Stock Symbol" options-prompt="Select stock"
+                model-id="selectedStock"
                 model-name="selectedStock" options-name="stocks"></stock-setting>
 
-        <stock-setting label="Chart Size" options-prompt="Select chart size"
-                       model-name="selectedChartSize" options-name="chartSize"></stock-setting>
+        <stock-setting
+                label="Chart Size" options-prompt="Select chart size"
+                model-id="selectedChartSize"
+                model-name="selectedChartSize" options-name="chartSize"></stock-setting>
 
         <stock-setting label="Time span" options-prompt="Select time span"
+                       model-id="selectedChartTimeSpan"
                        model-name="selectedChartTimeSpan" options-name="chartTimeSpan"></stock-setting>
 
         <stock-setting label="Chart type" options-prompt="Select chart type"
+                       model-id="selectedChartType"
                        model-name="selectedChartType" options-name="chartType"></stock-setting>
 
         <stock-setting label="Moving average" options-prompt="Select moving average indicator"
+                       model-id="selectedMovingAverageIndicator"
                        model-name="selectedMovingAverageIndicator" options-name="movingAverageIndicator"></stock-setting>
 
-        <stock-setting label="Technical indicator 2" options-prompt="Select tech Indicator 2"
-                       model-name="selectedTechnicalIndicators2" options-name="technicalIndicators2"></stock-setting>
+        <stock-setting
+                model-id="selectedTechnicalIndicators2"
+                label="Technical indicator 2" options-prompt="Select tech Indicator 2"
+                model-name="selectedTechnicalIndicators2" options-name="technicalIndicators2"></stock-setting>
 
 
-        selected chartSize : {{selectedChartSize}}
+        selected url  : {{selectedStock.selectedStockGraphUrl}}
         <button type="button" class="btn btn-primary" ng-click="saveSettings()">OK</button>
         <button type="button" class="btn btn-default" ng-click="closeModal()">cancel</button>
+        <div class="local-stock-picture-area">
+            <img ng-src="{{selectedStock.selectedStockGraphUrl}}" class="stock-graph-mg">
+        </div>
     </div>
 
 </div>
