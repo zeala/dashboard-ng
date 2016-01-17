@@ -8,12 +8,10 @@
                         id="stockNameInput"
                         ng-show="isLoaded"
                         ng-model="modelName"
-                        ng-options="option.name for option in getOptions()"
+                        ng-options="option.description for option in getOptions()"
                         class="col-sm-5">
                     <option value="" disabled>--{{optionsPrompt}}--</option>
-
                 </select>
-                <button ng-click="getSelectedItem()">get selected item</button>
             </div>
         </div>
     </div>

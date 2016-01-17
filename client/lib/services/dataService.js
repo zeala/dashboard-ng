@@ -9,42 +9,52 @@ angular.module('app').factory('dataService',
                 {
                     id: "AAPL",
                     name: 'Apple',
+                    description: 'Apple'
                 },
                 {
                     id: "MSFT",
                     name: 'Microsoft',
+                    description: 'Microsolft'
                 },
                 {
                     id: "AMZN",
                     name: 'Amazon',
+                    description: 'Amazon'
                 },
                 {
                     id: "GOOG",
                     name: 'Google Class C',
+                    description: 'Google Class C'
                 },
                 {
                     id: "FB",
                     name: 'Facebook',
+                    description: 'Facebook'
                 },
                 {
                     id: "GILD",
                     name: 'Gilead Sciences',
+                    description: 'Gilead Science'
                 },
                 {
                     id: "INTC",
                     name: 'Intel',
+                    description: 'Intel'
                 },
                 {
                     id: "GOOGl",
-                    name: 'Google Class a',
+                    name: 'Google Class A',
+                    description: 'Google Class A'
                 },
                 {
                     id: "CSCO",
                     name: 'Cisco',
+                    description: 'Cisco'
                 },
                 {
                     id: "CMCSA",
                     name: 'Comcast Corp',
+                    description: 'Comcast Corp'
                 },
             ],
 
